@@ -1,4 +1,5 @@
 {{ config(materialized='incremental', unique_key='venda_id') }}
+
 WITH vendas AS (
     SELECT
         v.id_vendas AS venda_id,
@@ -14,7 +15,7 @@ WITH vendas AS (
     JOIN {{ ref('dim_veiculos') }} vei ON v.id_veiculos = vei.veiculo_id
     JOIN {{ ref('dim_concessionarias') }} con ON v.id_concessionarias = con.concessionaria_id
     JOIN {{ ref('dim_vendedores') }} ven ON v.id_vendedores = ven.vendedor_id
-    JOIN {{ ref('dim_clientes') }} cli ON v.id_clientes = cli.cliente_id
+    --JOIN {{ ref('dim_clientes') }} cli ON v.id_clientes = cli.cliente_id
 )
 
 SELECT
