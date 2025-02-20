@@ -35,3 +35,7 @@ A instalação será realizada em uma máquina EC2 da AWS utilizando o SO Ubuntu
 
 Sobre credenciais, utilizar o arquivo "snowflake-credentials.txt".
 Para criação do database, schema e tables, utilizar os scripts no arquivo "snowflake-setup.sql".
+
+## DBT
+
+Utilizando DBT Cloud para criar um pipeline de transformação, com controle de versionamento e integrado com Github, para estar preparado para um futuro CI/CD.
