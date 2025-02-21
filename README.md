@@ -2,7 +2,9 @@
 
 Simulação de um projeto real de criação de pipelinas de integração de dados utilizando PostgreSQL (relacional), Airflow, DBT e Snowflake (analítico).
 
-## Acesso bancos de dados
+## Acesso bancos de dados* 
+
+\* Aparentemente as credenciais do curso mudaram, pois não está mais acessível.
 
 Banco de dados relacional de um sistema de vendas da concessionária:
 
@@ -28,7 +30,7 @@ http://143.244.215.137:3002/procura
 
 ## Instalação e Setup do Airflow
 
-Utilizar os scripts no arquivo "airflow-install.txt". 
+Utilizar os scripts no arquivo "airflow-install.txt".
 A instalação será realizada em uma máquina EC2 da AWS utilizando o SO Ubuntu.
 
 ## Setup Snowflake
@@ -39,3 +41,9 @@ Para criação do database, schema e tables, utilizar os scripts no arquivo "sno
 ## DBT
 
 Utilizando DBT Cloud para criar um pipeline de transformação, com controle de versionamento e integrado com Github, para estar preparado para um futuro CI/CD.
+
+## Dashboard
+
+Enquanto o profissional responsável pela construção de dashboards e outras análises não é contratado na NovaDrive, foi criado um dashboard simples utilizando o Looker Studio para acompanhar a performance de vendas das concessionárias.
+
+[Acesso ao Dashboard aqui.](https://lookerstudio.google.com/reporting/48df0d6a-a046-46ae-a540-06788324b373)
